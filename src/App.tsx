@@ -3,7 +3,7 @@ const App: React.FC = () => {
     <div className="App">
       Hello
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
