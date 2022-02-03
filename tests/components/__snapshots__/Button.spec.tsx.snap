@@ -1,0 +1,34 @@
+// Vitest Snapshot v1
+
+exports[`components/Button > correctly render: danger 1`] = `
+<div>
+  <button
+    class="css-gu30kj-Button"
+    data-testid="undefined-button"
+  >
+    sample
+  </button>
+</div>
+`;
+
+exports[`components/Button > correctly render: disabled 1`] = `
+<div>
+  <button
+    class="css-5shtp7-Button"
+    data-testid="undefined-button"
+  >
+    sample
+  </button>
+</div>
+`;
+
+exports[`components/Button > correctly render: primary 1`] = `
+<div>
+  <button
+    class="css-t9php5-Button"
+    data-testid="undefined-button"
+  >
+    sample
+  </button>
+</div>
+`;
