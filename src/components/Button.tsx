@@ -59,8 +59,17 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   ...props
 }) => {
-  const style = disabled ? disabledStyle : (buttonStyle === 'danger' ? dangerStyle : primaryStyle);
-  return <button data-testid={`${testId}-button`} css={[baseStyle, style]} onClick={(e) => {
-    if (!disabled && onClick) onClick(e);
-  }} {...props}>{label}</button>;
+  const style = disabled ? disabledStyle : buttonStyle === 'danger' ? dangerStyle : primaryStyle;
+  return (
+    <button
+      data-testid={`${testId}-button`}
+      css={[baseStyle, style]}
+      onClick={(e) => {
+        if (!disabled && onClick) onClick(e);
+      }}
+      {...props}
+    >
+      {label}
+    </button>
+  );
 };
