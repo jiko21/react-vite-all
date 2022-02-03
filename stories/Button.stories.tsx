@@ -19,5 +19,19 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  children: 'Button',
+  label: 'test',
+};
+
+export const Danger = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Danger.args = {
+  label: 'test',
+  buttonStyle: 'danger',
+};
+
+export const Disabled = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Disabled.args = {
+  label: 'test',
+  disabled: true,
 };
