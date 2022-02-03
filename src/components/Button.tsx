@@ -8,6 +8,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   buttonStyle?: ButtonStyle;
   disabled?: boolean;
   label: React.ReactNode;
+  testId?: string;
 };
 
 const baseStyle = css`
@@ -54,8 +55,12 @@ export const Button: React.FC<ButtonProps> = ({
   buttonStyle = 'primary',
   disabled = false,
   label,
+  testId,
+  onClick,
   ...props
 }) => {
   const style = disabled ? disabledStyle : (buttonStyle === 'danger' ? dangerStyle : primaryStyle);
-  return <button css={[baseStyle, style]}>{label}</button>;
+  return <button data-testid={`${testId}-button`} css={[baseStyle, style]} onClick={(e) => {
+    if (!disabled && onClick) onClick(e);
+  }} {...props}>{label}</button>;
 };

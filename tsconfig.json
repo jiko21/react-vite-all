@@ -14,7 +14,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "types": ["vitest/globals"],
     "jsx": "react-jsx"
   },
-  "include": ["./src", "stories", "stories"]
+  "include": ["./src", "./stories", "./tests"]
 }
