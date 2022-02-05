@@ -12,11 +12,12 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  'plugins': ['react', '@typescript-eslint'],
+  'plugins': ['react', '@typescript-eslint', 'jest'],
   'rules': {
     'require-jsdoc': 'off',
     'react/react-in-jsx-scope': 'off',
-    'object-curly-spacing': 'off'
+    'object-curly-spacing': 'off',
+    'react/display-name': 'off'
   },
   'settings': {
     'react': {
