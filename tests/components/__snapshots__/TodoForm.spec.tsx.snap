@@ -1,0 +1,58 @@
+// Vitest Snapshot v1
+
+exports[`components/TodoForm > correctly call handleSubmit when input is not empty 1`] = `
+<div>
+  <div>
+    <input
+      class="css-68qs4z"
+      data-testid="todoForm-input"
+      type="text"
+      value=""
+    />
+    <button
+      class="css-5shtp7-Button"
+      data-testid="todoForm-button"
+    >
+      ADD
+    </button>
+  </div>
+</div>
+`;
+
+exports[`components/TodoForm > correctly fill input 1`] = `
+<div>
+  <div>
+    <input
+      class="css-68qs4z"
+      data-testid="todoForm-input"
+      type="text"
+      value="test"
+    />
+    <button
+      class="css-t9php5-Button"
+      data-testid="todoForm-button"
+    >
+      ADD
+    </button>
+  </div>
+</div>
+`;
+
+exports[`components/TodoForm > correctly render 1`] = `
+<div>
+  <div>
+    <input
+      class="css-68qs4z"
+      data-testid="todoForm-input"
+      type="text"
+      value=""
+    />
+    <button
+      class="css-5shtp7-Button"
+      data-testid="todoForm-button"
+    >
+      ADD
+    </button>
+  </div>
+</div>
+`;
